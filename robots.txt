@@ -1,0 +1,1 @@
+Sitemap: https://tompham97.github.io/clothing-item-classification/sitemap.xml
