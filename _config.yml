@@ -37,7 +37,7 @@ url: "https://TomPham97.github.io" # the base hostname & protocol for your site,
 baseurl: "/clothing-item-classification" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
-minima:
+merlot:
   social_links:
     linkedin: tompham97
     github: TomPham97
@@ -82,7 +82,7 @@ html_escape:
 
 # Everything below here should be left alone. Modifications may break fastpages
 future: true
-theme: minima
+theme: merlot
 plugins:
   - jekyll-feed
   - jekyll-gist
