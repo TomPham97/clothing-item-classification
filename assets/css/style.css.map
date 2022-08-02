@@ -3,9 +3,9 @@
 	"file": "style.css",
 	"sources": [
 		"style.scss",
-		"../../tmp/jekyll-remote-theme-20220802-1-1ws79eq/_sass/jekyll-theme-merlot.scss",
-		"../../tmp/jekyll-remote-theme-20220802-1-1ws79eq/_sass/screen.scss",
-		"../../tmp/jekyll-remote-theme-20220802-1-1ws79eq/_sass/rouge-base16-solarized.scss"
+		"../../tmp/jekyll-remote-theme-20220802-1-lax3cv/_sass/jekyll-theme-merlot.scss",
+		"../../tmp/jekyll-remote-theme-20220802-1-lax3cv/_sass/screen.scss",
+		"../../tmp/jekyll-remote-theme-20220802-1-lax3cv/_sass/rouge-base16-solarized.scss"
 	],
 	"sourcesContent": [
 		"@import 'jekyll-theme-merlot';\n",
