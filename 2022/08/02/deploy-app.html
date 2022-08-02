@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="/clothing-item-classification/assets/css/style.css?v=" media="screen">
+    <link rel="stylesheet" href="/clothing-item-classification/assets/css/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="/clothing-item-classification/assets/css/non-screen.css" media="handheld, only screen and (max-device-width:640px)">
+
+    <script src="/clothing-item-classification/assets/js/modernizr.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="/clothing-item-classification/assets/js/headsmart.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Title | Clothing item classifier</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A fastai model based classifer that can distinguish between shirts, pants, dresses, and socks." />
+<meta property="og:description" content="A fastai model based classifer that can distinguish between shirts, pants, dresses, and socks." />
+<link rel="canonical" href="https://tompham97.github.io/clothing-item-classification/2022/08/02/deploy-app.html" />
+<meta property="og:url" content="https://tompham97.github.io/clothing-item-classification/2022/08/02/deploy-app.html" />
+<meta property="og:site_name" content="Clothing item classifier" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-08-02T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Title" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-02T00:00:00-05:00","datePublished":"2022-08-02T00:00:00-05:00","description":"A fastai model based classifer that can distinguish between shirts, pants, dresses, and socks.","headline":"Title","mainEntityOfPage":{"@type":"WebPage","@id":"https://tompham97.github.io/clothing-item-classification/2022/08/02/deploy-app.html"},"url":"https://tompham97.github.io/clothing-item-classification/2022/08/02/deploy-app.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/clothing-item-classification/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Clothing item classifier</h1>
+            <h2>A fastai model based classifer that can distinguish between shirts, pants, dresses, and socks.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      
+        <div id="no-downloads">
+          <span class="inner">
+          </span>
+        </div>
+      
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-02T00:00:00-05:00" itemprop="datePublished">
+        Aug 2, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/TomPham97/clothing-item-classification/tree/master/_notebooks/2022-08-02-deploy-app.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/clothing-item-classification/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/TomPham97/clothing-item-classification/master?filepath=_notebooks%2F2022-08-02-deploy-app.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/clothing-item-classification/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/TomPham97/clothing-item-classification/blob/master/_notebooks/2022-08-02-deploy-app.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/clothing-item-classification/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FTomPham97%2Fclothing-item-classification%2Fblob%2Fmaster%2F_notebooks%2F2022-08-02-deploy-app.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/clothing-item-classification/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-08-02-deploy-app.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">fastai.vision.all</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">huggingface_hub</span> <span class="kn">import</span> <span class="n">push_to_hub_fastai</span><span class="p">,</span> <span class="n">from_pretrained_fastai</span>
+<span class="kn">import</span> <span class="nn">gradio</span> <span class="k">as</span> <span class="nn">gr</span>
+<span class="kn">import</span> <span class="nn">skimage</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/tompham/Document Files/Programming/GitHub/clothing-item-classification/_notebooks/2022-08-02-deploy-app.ipynb Cell 2</span> in <span class="ansi-cyan-fg">&lt;cell line: 3&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/tompham/Document%20Files/Programming/GitHub/clothing-item-classification/_notebooks/2022-08-02-deploy-app.ipynb#ch0000001?line=0&#39;&gt;1&lt;/a&gt;</span> #|export
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/tompham/Document%20Files/Programming/GitHub/clothing-item-classification/_notebooks/2022-08-02-deploy-app.ipynb#ch0000001?line=1&#39;&gt;2&lt;/a&gt;</span> from fastai.vision.all import *
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/tompham/Document%20Files/Programming/GitHub/clothing-item-classification/_notebooks/2022-08-02-deploy-app.ipynb#ch0000001?line=2&#39;&gt;3&lt;/a&gt;</span> from huggingface_hub import push_to_hub_fastai, from_pretrained_fastai
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/tompham/Document%20Files/Programming/GitHub/clothing-item-classification/_notebooks/2022-08-02-deploy-app.ipynb#ch0000001?line=3&#39;&gt;4&lt;/a&gt;</span> import gradio as gr
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/tompham/Document%20Files/Programming/GitHub/clothing-item-classification/_notebooks/2022-08-02-deploy-app.ipynb#ch0000001?line=4&#39;&gt;5&lt;/a&gt;</span> import skimage
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;huggingface_hub&#39;</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Clothing item classifier&quot;</span>
+<span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;A fastai model based classifer that can distinguish between shirts, pants, dresses, and socks.&quot;</span>
+<span class="n">interpretation</span> <span class="o">=</span> <span class="s1">&#39;default&#39;</span>
+<span class="n">enable_queue</span> <span class="o">=</span> <span class="kc">True</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">learn</span> <span class="o">=</span> <span class="n">from_pretrained_fastai</span><span class="p">(</span><span class="s2">&quot;tompham97/clothe-classifier&quot;</span><span class="p">)</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">learn</span><span class="o">.</span><span class="n">dls</span><span class="o">.</span><span class="n">vocab</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/tompham/Document Files/Programming/GitHub/clothing-item-classification/_notebooks/2022-08-02-deploy-app.ipynb Cell 4</span> in <span class="ansi-cyan-fg">&lt;cell line: 2&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/tompham/Document%20Files/Programming/GitHub/clothing-item-classification/_notebooks/2022-08-02-deploy-app.ipynb#ch0000003?line=0&#39;&gt;1&lt;/a&gt;</span> #|export
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/tompham/Document%20Files/Programming/GitHub/clothing-item-classification/_notebooks/2022-08-02-deploy-app.ipynb#ch0000003?line=1&#39;&gt;2&lt;/a&gt;</span> learn = from_pretrained_fastai(&#34;tompham97/clothe-classifier&#34;)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/tompham/Document%20Files/Programming/GitHub/clothing-item-classification/_notebooks/2022-08-02-deploy-app.ipynb#ch0000003?line=2&#39;&gt;3&lt;/a&gt;</span> labels = learn.dls.vocab
+
+<span class="ansi-red-fg">NameError</span>: name &#39;from_pretrained_fastai&#39; is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">classify_image</span><span class="p">(</span><span class="n">img</span><span class="p">):</span>
+    <span class="n">pred</span><span class="p">,</span> <span class="n">idx</span><span class="p">,</span> <span class="n">probs</span> <span class="o">=</span> <span class="n">learn</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">{</span><span class="n">labels</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span> <span class="nb">float</span><span class="p">(</span><span class="n">probs</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">))}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">image</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">Image</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">192</span><span class="p">,</span> <span class="mi">192</span><span class="p">))</span>
+<span class="n">label</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">outputs</span><span class="o">.</span><span class="n">Label</span><span class="p">()</span>
+<span class="n">examples</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;dress.webp&#39;</span><span class="p">,</span> <span class="s1">&#39;pants.webp&#39;</span><span class="p">,</span> <span class="s1">&#39;shirt.jpeg&#39;</span><span class="p">,</span> <span class="s1">&#39;socks.jpeg&#39;</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">intf</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">Interface</span><span class="p">(</span><span class="n">fn</span><span class="o">=</span><span class="n">classify_image</span><span class="p">,</span> <span class="n">inputs</span><span class="o">=</span><span class="n">image</span><span class="p">,</span>
+                    <span class="n">outputs</span><span class="o">=</span><span class="n">label</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span>
+                    <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span> <span class="n">examples</span><span class="o">=</span><span class="n">examples</span><span class="p">,</span>
+                    <span class="n">interpretation</span><span class="o">=</span><span class="n">interpretation</span><span class="p">,</span> <span class="n">enable_queue</span><span class="o">=</span><span class="n">enable_queue</span><span class="p">)</span>
+<span class="n">intf</span><span class="o">.</span><span class="n">launch</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/clothing-item-classification/2022/08/02/deploy-app.html" hidden></a>
+</article>
+
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            
+            
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+  </body>
+</html>
