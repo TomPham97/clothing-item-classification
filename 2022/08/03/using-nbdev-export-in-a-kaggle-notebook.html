@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="/clothing-item-classification/assets/css/style.css?v=" media="screen">
+    <link rel="stylesheet" href="/clothing-item-classification/assets/css/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="/clothing-item-classification/assets/css/non-screen.css" media="handheld, only screen and (max-device-width:640px)">
+
+    <script src="/clothing-item-classification/assets/js/modernizr.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="/clothing-item-classification/assets/js/headsmart.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Title | Clothing item classifier</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A fastai model based classifer that can distinguish between shirts, pants, dresses, and socks." />
+<meta property="og:description" content="A fastai model based classifer that can distinguish between shirts, pants, dresses, and socks." />
+<link rel="canonical" href="https://tompham97.github.io/clothing-item-classification/2022/08/03/using-nbdev-export-in-a-kaggle-notebook.html" />
+<meta property="og:url" content="https://tompham97.github.io/clothing-item-classification/2022/08/03/using-nbdev-export-in-a-kaggle-notebook.html" />
+<meta property="og:site_name" content="Clothing item classifier" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-08-03T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Title" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-03T00:00:00-05:00","datePublished":"2022-08-03T00:00:00-05:00","description":"A fastai model based classifer that can distinguish between shirts, pants, dresses, and socks.","headline":"Title","mainEntityOfPage":{"@type":"WebPage","@id":"https://tompham97.github.io/clothing-item-classification/2022/08/03/using-nbdev-export-in-a-kaggle-notebook.html"},"url":"https://tompham97.github.io/clothing-item-classification/2022/08/03/using-nbdev-export-in-a-kaggle-notebook.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/clothing-item-classification/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Clothing item classifier</h1>
+            <h2>A fastai model based classifer that can distinguish between shirts, pants, dresses, and socks.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      
+        <div id="no-downloads">
+          <span class="inner">
+          </span>
+        </div>
+      
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Title</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-03T00:00:00-05:00" itemprop="datePublished">
+        Aug 3, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/TomPham97/clothing-item-classification/tree/master/_notebooks/using-nbdev-export-in-a-kaggle-notebook.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/clothing-item-classification/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/TomPham97/clothing-item-classification/master?filepath=_notebooks%2Fusing-nbdev-export-in-a-kaggle-notebook.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/clothing-item-classification/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/TomPham97/clothing-item-classification/blob/master/_notebooks/using-nbdev-export-in-a-kaggle-notebook.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/clothing-item-classification/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FTomPham97%2Fclothing-item-classification%2Fblob%2Fmaster%2F_notebooks%2Fusing-nbdev-export-in-a-kaggle-notebook.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/clothing-item-classification/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/using-nbdev-export-in-a-kaggle-notebook.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>It can be handy to create script files from notebooks, using nbdev's <code>notebook2script</code>. But since Kaggle doesn't actually save the notebook to the file-system, we have to do some workarounds to make this happen. Here's all the steps needed to export a notebook to a script:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install -U nbdev
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Collecting nbdev
+  Downloading nbdev-2.0.7-py3-none-any.whl (49 kB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">49.2/49.2 KB</span> <span class="ansi-red-fg">379.8 kB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>
+Requirement already satisfied: astunparse in /opt/conda/lib/python3.7/site-packages (from nbdev) (1.6.3)
+Collecting fastcore&gt;=1.5.11
+  Downloading fastcore-1.5.11-py3-none-any.whl (69 kB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">69.1/69.1 KB</span> <span class="ansi-red-fg">1.5 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>
+Collecting execnb
+  Downloading execnb-0.0.9-py3-none-any.whl (13 kB)
+Collecting ghapi
+  Downloading ghapi-1.0.0-py3-none-any.whl (55 kB)
+     <span class="ansi-black-intense-fg">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class="ansi-green-fg">55.3/55.3 KB</span> <span class="ansi-red-fg">1.8 MB/s</span> eta <span class="ansi-cyan-fg">0:00:00</span>
+Collecting asttokens
+  Downloading asttokens-2.0.5-py2.py3-none-any.whl (20 kB)
+Requirement already satisfied: packaging in /opt/conda/lib/python3.7/site-packages (from fastcore&gt;=1.5.11-&gt;nbdev) (21.3)
+Requirement already satisfied: pip in /opt/conda/lib/python3.7/site-packages (from fastcore&gt;=1.5.11-&gt;nbdev) (22.0.4)
+Requirement already satisfied: six in /opt/conda/lib/python3.7/site-packages (from asttokens-&gt;nbdev) (1.16.0)
+Requirement already satisfied: wheel&lt;1.0,&gt;=0.23.0 in /opt/conda/lib/python3.7/site-packages (from astunparse-&gt;nbdev) (0.37.1)
+Requirement already satisfied: ipython in /opt/conda/lib/python3.7/site-packages (from execnb-&gt;nbdev) (7.32.0)
+Requirement already satisfied: pexpect&gt;4.3 in /opt/conda/lib/python3.7/site-packages (from ipython-&gt;execnb-&gt;nbdev) (4.8.0)
+Requirement already satisfied: matplotlib-inline in /opt/conda/lib/python3.7/site-packages (from ipython-&gt;execnb-&gt;nbdev) (0.1.3)
+Requirement already satisfied: jedi&gt;=0.16 in /opt/conda/lib/python3.7/site-packages (from ipython-&gt;execnb-&gt;nbdev) (0.18.1)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0 in /opt/conda/lib/python3.7/site-packages (from ipython-&gt;execnb-&gt;nbdev) (3.0.27)
+Requirement already satisfied: setuptools&gt;=18.5 in /opt/conda/lib/python3.7/site-packages (from ipython-&gt;execnb-&gt;nbdev) (59.8.0)
+Requirement already satisfied: pygments in /opt/conda/lib/python3.7/site-packages (from ipython-&gt;execnb-&gt;nbdev) (2.11.2)
+Requirement already satisfied: traitlets&gt;=4.2 in /opt/conda/lib/python3.7/site-packages (from ipython-&gt;execnb-&gt;nbdev) (5.1.1)
+Requirement already satisfied: decorator in /opt/conda/lib/python3.7/site-packages (from ipython-&gt;execnb-&gt;nbdev) (5.1.1)
+Requirement already satisfied: backcall in /opt/conda/lib/python3.7/site-packages (from ipython-&gt;execnb-&gt;nbdev) (0.2.0)
+Requirement already satisfied: pickleshare in /opt/conda/lib/python3.7/site-packages (from ipython-&gt;execnb-&gt;nbdev) (0.7.5)
+Requirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in /opt/conda/lib/python3.7/site-packages (from packaging-&gt;fastcore&gt;=1.5.11-&gt;nbdev) (3.0.7)
+Requirement already satisfied: parso&lt;0.9.0,&gt;=0.8.0 in /opt/conda/lib/python3.7/site-packages (from jedi&gt;=0.16-&gt;ipython-&gt;execnb-&gt;nbdev) (0.8.3)
+Requirement already satisfied: ptyprocess&gt;=0.5 in /opt/conda/lib/python3.7/site-packages (from pexpect&gt;4.3-&gt;ipython-&gt;execnb-&gt;nbdev) (0.7.0)
+Requirement already satisfied: wcwidth in /opt/conda/lib/python3.7/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,&lt;3.1.0,&gt;=2.0.0-&gt;ipython-&gt;execnb-&gt;nbdev) (0.2.5)
+Installing collected packages: asttokens, fastcore, ghapi, execnb, nbdev
+  Attempting uninstall: fastcore
+    Found existing installation: fastcore 1.4.2
+    Uninstalling fastcore-1.4.2:
+      Successfully uninstalled fastcore-1.4.2
+<span class="ansi-red-fg">ERROR: pip&#39;s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+fastai 2.6.0 requires fastcore&lt;1.5,&gt;=1.3.27, but you have fastcore 1.5.11 which is incompatible.</span><span class="ansi-red-fg">
+</span>Successfully installed asttokens-2.0.5 execnb-0.0.9 fastcore-1.5.11 ghapi-1.0.0 nbdev-2.0.7
+<span class="ansi-yellow-fg">WARNING: Running pip as the &#39;root&#39; user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv</span><span class="ansi-yellow-fg">
+</span></pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="o">=</span><span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">notebook</span> -e testnbdev.ipynb
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nbdev.export</span> <span class="kn">import</span> <span class="n">nb_export</span>
+<span class="n">nb_export</span><span class="p">(</span><span class="s1">&#39;testnbdev.ipynb&#39;</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>cat app.py
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre># AUTOGENERATED! DO NOT EDIT! File to edit: testnbdev.ipynb.
+
+# %% auto 0
+__all__ = [&#39;a&#39;]
+
+# %% testnbdev.ipynb 2
+a=1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/clothing-item-classification/2022/08/03/using-nbdev-export-in-a-kaggle-notebook.html" hidden></a>
+</article>
+
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            
+            
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+  </body>
+</html>
